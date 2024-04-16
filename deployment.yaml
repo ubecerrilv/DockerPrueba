@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mi_pagina_deployment
+  name: mi-pagina-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pagina_prueba
+      app: pagina-prueba
   template:
     metadata:
       labels:
-        app: pagina_prueba
+        app: pagina-prueba
     spec:
       containers:
       - name: mi-pagina-uaem-container
