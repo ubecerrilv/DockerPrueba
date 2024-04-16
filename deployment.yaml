@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+imagePullPolicy: Never
 metadata:
   name: mi-pagina-deployment
 spec:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: mi-pagina-uaem-container
-        image: pagina_prueba
+        image: localhost/pagina_prueba
         ports:
         - containerPort: 80
