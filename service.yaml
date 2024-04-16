@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mi_pagina_service
+  name: mi-pagina-service
 spec:
   selector:
-    app: pagina_prueba
+    app: pagina-prueba
   ports:
     - protocol: TCP
       port: 80
